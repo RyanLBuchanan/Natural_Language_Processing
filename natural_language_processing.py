@@ -23,7 +23,7 @@ for i in range(0, 1000):
     review.lower()
     review.split()
      ps = PorterStemmer()
-    review = []
+    review = [for word in review]
 # Create the Bag of Words model
 
 
