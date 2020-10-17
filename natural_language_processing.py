@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Import dataset
-
+dataset = pd.read_csv('Restaurant_Reviews.tsv', delimiter = '\t', quoting = 3)
 
 # Clean the texts
 
