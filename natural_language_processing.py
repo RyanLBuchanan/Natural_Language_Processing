@@ -9,7 +9,19 @@ import pandas as pd
 dataset = pd.read_csv('Restaurant_Reviews.tsv', delimiter = '\t', quoting = 3)
 
 # Clean the texts
-
+import re 
+# NLTK removes the stop words 
+import nltk
+nltk.download('stopwords')
+from nltk.corpus import stopwords
+# Stemming takes the root of a word removing conjugation to simplify & understand gist meaning (reducing final dimension )
+from nltk.stem.porter import PorterStemmer
+# Corpus will contain all the different restaurant reviews cleaned
+corpus = []
+for i in range(0, 1000):
+    review = re.sub('[^a-zA-Z]', ' ', dataset['Review'][i])
+    review.lower()
+    review.split()
 
 # Create the Bag of Words model
 
