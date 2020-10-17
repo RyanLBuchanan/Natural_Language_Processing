@@ -22,7 +22,8 @@ for i in range(0, 1000):
     review = re.sub('[^a-zA-Z]', ' ', dataset['Review'][i])
     review.lower()
     review.split()
-
+     ps = PorterStemmer()
+    review = []
 # Create the Bag of Words model
 
 
