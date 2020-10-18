@@ -23,7 +23,7 @@ for i in range(0, 1000):
     review.lower()
     review.split()
      ps = PorterStemmer()
-    review = [for word in review]
+    review = [ps.stem(word) for word in review if not word in set(stopwords.words('english'))]
 # Create the Bag of Words model
 
 
