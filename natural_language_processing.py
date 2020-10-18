@@ -22,8 +22,11 @@ for i in range(0, 1000):
     review = re.sub('[^a-zA-Z]', ' ', dataset['Review'][i])
     review.lower()
     review.split()
-     ps = PorterStemmer()
+    ps = PorterStemmer()
     review = [ps.stem(word) for word in review if not word in set(stopwords.words('english'))]
+    review = ' '.join(review)
+    corpus.append(review)
+    
 # Create the Bag of Words model
 
 
