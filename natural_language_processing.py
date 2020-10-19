@@ -36,6 +36,10 @@ from sklearn.feature_extraction.text import CountVectorizer
 cv = CountVectorizer()
 X = cv.fit_transform(corpus).toarray()
 y = dataset.iloc[:, -1].values
+
+# Tokenization
+len(X[0])
+
 # Split the dataset into the Training set and the Test set
 
 
