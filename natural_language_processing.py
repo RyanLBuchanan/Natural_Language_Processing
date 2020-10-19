@@ -33,7 +33,7 @@ print(corpus)
 
 # Create the Bag of Words model
 from sklearn.feature_extraction.text import CountVectorizer
-cv = CountVectorizer()
+cv = CountVectorizer(max_features = 1500)
 X = cv.fit_transform(corpus).toarray()
 y = dataset.iloc[:, -1].values
 
