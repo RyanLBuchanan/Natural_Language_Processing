@@ -34,6 +34,7 @@ print(corpus)
 # Create the Bag of Words model
 from sklearn.feature_extraction.text import CountVectorizer
 cv = CountVectorizer()
+X = cv.fit_transform()
 
 # Split the dataset into the Training set and the Test set
 
