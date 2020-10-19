@@ -27,6 +27,7 @@ for i in range(0, 1000):
     review = ' '.join(review)
     corpus.append(review)
     
+print(corpus)
 # Create the Bag of Words model
 
 
