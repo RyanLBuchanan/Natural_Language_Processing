@@ -33,7 +33,7 @@ for i in range(0, 1000):
 # Split the dataset into the Training set and the Test set
 
 
-# Train the Naive Bayes Model on the Training set
+# Train the Naive Bayes model on the Training set
 
 
 # Predict the Test set results
