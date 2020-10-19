@@ -30,8 +30,10 @@ for i in range(0, 1000):
     corpus.append(review)
     
 print(corpus)
-# Create the Bag of Words model
 
+# Create the Bag of Words model
+from sklearn.feature_extraction.text import CountVectorizer
+cv = CountVectorizer
 
 # Split the dataset into the Training set and the Test set
 
